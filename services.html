@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <div id="service-details" class="col-xl-6 col-lg-6">
+    <div class="sv-service-content-wrap d-flex align-items-center">
+      <div class="sv-service-content">
+        <div class="sv-service-title-box">
+          <span class="sv-service-subtitle"><i>01</i><span id="service-name">Service Name</span></span>
+          <h4 class="sv-service-title">Service Title</h4>
+        </div>
+        <div class="sv-service-space-wrap">
+          <div class="sv-service-text">
+            <p id="service-description">Service Description</p>
+          </div>
+          <div class="sv-service-list">
+            <ul id="service-list">
+              <!-- Service details will be inserted here -->
+            </ul>
+          </div>
+          <div class="sv-service-btn">
+            <a class="tp-btn-zikzak zikzak-inner p-relative" href="service-details.html">
+              <span class="zikzak-content">
+                See <br /> Details
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.2434 8.16465C16.3866 8.31677 16.4668 8.52224 16.4668 8.73637C16.4668 8.9505 16.3866 9.15597 16.2434 9.30811L9.38818 16.53C9.24196 16.6773 9.04774 16.7599 8.84546 16.7607C8.74439 16.7602 8.64426 16.7399 8.55031 16.7005C8.41169 16.6392 8.2934 16.5359 8.21038 16.4038C8.12736 16.2717 8.0833 16.1167 8.08378 15.9583V9.53881H1.22849C1.02648 9.53881 0.832739 9.45428 0.689893 9.30378C0.547047 9.15329 0.466797 8.9492 0.466797 8.73637C0.466797 8.52356 0.547047 8.31945 0.689893 8.16897C0.832739 8.01848 1.02648 7.93395 1.22849 7.93395H8.08378V1.51445C8.0833 1.35603 8.12736 1.20101 8.21038 1.06892C8.2934 0.936828 8.41169 0.833584 8.55031 0.772196C8.691 0.714385 8.84436 0.699718 8.99264 0.729895C9.14092 0.760071 9.27805 0.833857 9.38818 0.942715L16.2434 8.16465Z" fill="currentColor"></path>
+                </svg>
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.2434 8.16465C16.3866 8.31677 16.4668 8.52224 16.4668 8.73637C16.4668 8.9505 16.3866 9.15597 16.2434 9.30811L9.38818 16.53C9.24196 16.6773 9.04774 16.7599 8.84546 16.7607C8.74439 16.7602 8.64426 16.7399 8.55031 16.7005C8.41169 16.6392 8.2934 16.5359 8.21038 16.4038C8.12736 16.2717 8.0833 16.1167 8.08378 15.9583V9.53881H1.22849C1.02648 9.53881 0.832739 9.45428 0.689893 9.30378C0.547047 9.15329 0.466797 8.9492 0.466797 8.73637C0.466797 8.52356 0.547047 8.31945 0.689893 8.16897C0.832739 8.01848 1.02648 7.93395 1.22849 7.93395H8.08378V1.51445C8.0833 1.35603 8.12736 1.20101 8.21038 1.06892C8.2934 0.936828 8.41169 0.833584 8.55031 0.772196C8.691 0.714385 8.84436 0.699718 8.99264 0.729895C9.14092 0.760071 9.27805 0.833857 9.38818 0.942715L16.2434 8.16465Z" fill="currentColor"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const service = urlParams.get('service');
+      
+      const services = {
+        consulting: {
+          name: "Salesforce Consulting",
+          title: "Consulting Services",
+          description: "We provide top-notch Salesforce consulting services to help you maximize your Salesforce investment.",
+          list: [
+            "Service detail 1 for consulting",
+            "Service detail 2 for consulting",
+            "Service detail 3 for consulting"
+          ]
+        },
+        "core-product": {
+          name: "Salesforce Core Product Implementation",
+          title: "Core Product Implementation",
+          description: "Implement Salesforce core products to enhance your business processes.",
+          list: [
+            "Service detail 1 for core product",
+            "Service detail 2 for core product",
+            "Service detail 3 for core product"
+          ]
+        },
+        appexchange: {
+          name: "Salesforce Appexchange Solutions",
+          title: "Appexchange Solutions",
+          description: "Get custom solutions from the Salesforce Appexchange.",
+          list: [
+            "Service detail 1 for appexchange",
+            "Service detail 2 for appexchange",
+            "Service detail 3 for appexchange"
+          ]
+        },
+        "managed-service": {
+          name: "Salesforce Managed Service",
+          title: "Managed Services",
+          description: "Ensure your Salesforce instance is always running optimally with our managed services.",
+          list: [
+            "Service detail 1 for managed service",
+            "Service detail 2 for managed service",
+            "Service detail 3 for managed service"
+          ]
+        },
+        integration: {
+          name: "Salesforce Integration",
+          title: "Integration Services",
+          description: "Integrate Salesforce with your other business systems seamlessly.",
+          list: [
+            "Service detail 1 for integration",
+            "Service detail 2 for integration",
+            "Service detail 3 for integration"
+          ]
+        },
+        development: {
+          name: "Salesforce Development",
+          title: "Development Services",
+          description: "Custom development to meet your unique business needs.",
+          list: [
+            "Service detail 1 for development",
+            "Service detail 2 for development",
+            "Service detail 3 for development"
+          ]
+        },
+        ai: {
+          name: "Salesforce AI Implementation",
+          title: "AI Implementation",
+          description: "Leverage AI to gain deeper insights and improve decision-making.",
+          list: [
+            "Service detail 1 for AI implementation",
+            "Service detail 2 for AI implementation",
+            "Service detail 3 for AI implementation"
+          ]
+        },
+        "web-app": {
+          name: "Web App Development",
+          title: "Web App Development",
+          description: "Develop custom web applications to enhance your business processes.",
+          list: [
+            "Service detail 1 for web app development",
+            "Service detail 2 for web app development",
+            "Service detail 3 for web app development"
+          ]
+        },
+        "mobile-app": {
+          name: "Mobile App Development",
+          title: "Mobile App Development",
+          description: "Create mobile apps that provide great user experiences on the go.",
+          list: [
+            "Service detail 1 for mobile app development",
+            "Service detail 2 for mobile app development",
+            "Service detail 3 for mobile app development"
+          ]
+        }
+      };
+
+      if (service && services[service]) {
+        const serviceData = services[service];
+        document.getElementById('service-name').textContent = serviceData.name;
+        document.querySelector('.sv-service-title').textContent = serviceData.title;
+        document.getElementById('service-description').textContent = serviceData.description;
+
+        const serviceList = document.getElementById('service-list');
+        serviceList.innerHTML = '';
+        serviceData.list.forEach(item => {
+          const listItem = document.createElement('li');
+          listItem.textContent = item;
+          serviceList.appendChild(listItem);
+        });
+      } else {
+        document.getElementById('service-details').innerHTML = '<p>Service not found.</p>';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<!-- Mirrored from html.hixstudio.net/liko-prev/liko/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Sep 2024 10:04:01 GMT -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Genufy</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+  <style>
+    /* Preloader background */
+    .preloader-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      /* Semi-transparent background */
+      z-index: 9999;
+      /* Ensure it's on top of other content */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Image animation */
+    .preloader-2 img {
+      animation: fadeIn 1.5s ease-in-out infinite alternate;
+    }
+
+    /* Keyframes for spinning animation */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Keyframes for fading animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <!-- CSS here -->
+  <link rel="stylesheet" href="assets/css/temp.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+  <link rel="stylesheet" href="assets/css/spacing.css" />
+  <link rel="stylesheet" href="assets/css/custom-animation.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="body" class="tp-magic-cursor">
+  <!-- pre loader area start -->
+  <div id="loading" class="preloader-wrap">
+    <div class="preloader-2 text-center">
+      <img style="max-width: 50%" src="assets/img/logo/logo-white.png" alt="" />
+    </div>
+  </div>
+  <!-- pre loader area end -->
+
+  <!-- Begin magic cursor  
+   ======================== -->
+  <div id="magic-cursor">
+    <div id="ball"></div>
+  </div>
+  <!-- End magic cursor -->
+
+  <!-- tp-offcanvus-area-end -->
+  <div class="tp-offcanvas-area">
+    <div class="tp-offcanvas-wrapper">
+      <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+        <div class="tp-offcanvas-logo">
+          <a href="index.html">
+            <img class="logo-2" src="assets/img/logo/logo-white.png" alt="" />
+          </a>
+        </div>
+        <div class="tp-offcanvas-close">
+          <button class="tp-offcanvas-close-btn">
+            <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="tp-offcanvas-main">
+        <div class="tp-offcanvas-content">
+          <h3 class="tp-offcanvas-title">Hello There!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        </div>
+        <div class="tp-main-menu-mobile d-xl-none"></div>
+        <div class="tp-offcanvas-gallery">
+          <div class="row gx-2">
+            <div class="col-md-3 col-3">
+              <div class="tp-offcanvas-gallery-img fix">
+                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-1.jpg" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-3">
+              <div class="tp-offcanvas-gallery-img fix">
+                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-2.jpg" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-3">
+              <div class="tp-offcanvas-gallery-img fix">
+                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-3.jpg" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-3">
+              <div class="tp-offcanvas-gallery-img fix">
+                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-4.jpg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tp-offcanvas-contact">
+          <h3 class="tp-offcanvas-title sm">Information</h3>
+
+          <ul>
+            <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
+            <li><a href="mailto:hello@diego.com">hello@diego.com</a></li>
+            <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+          </ul>
+        </div>
+        <div class="tp-offcanvas-social">
+          <h3 class="tp-offcanvas-title sm">Follow Us</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M10.6016 7.5907C10.6818 8.13166 10.5894 8.68414 10.3375 9.16955C10.0856 9.65497 9.68711 10.0486 9.19862 10.2945C8.71014 10.5404 8.15656 10.6259 7.61663 10.5391C7.0767 10.4522 6.57791 10.1972 6.19121 9.81055C5.80451 9.42385 5.54959 8.92506 5.46271 8.38513C5.37583 7.8452 5.46141 7.29163 5.70728 6.80314C5.95315 6.31465 6.34679 5.91613 6.83221 5.66425C7.31763 5.41238 7.87011 5.31998 8.41107 5.4002C8.96287 5.48202 9.47372 5.73915 9.86817 6.1336C10.2626 6.52804 10.5197 7.0389 10.6016 7.5907Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.5742 4.42578H11.5842" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.50589 12.7494C4.57662 16.336 9.16278 17.5648 12.7494 15.4941C14.2113 14.65 15.2816 13.388 15.8962 11.9461C16.7895 9.85066 16.7208 7.37526 15.4941 5.25063C14.2674 3.12599 12.1581 1.82872 9.89669 1.55462C8.34063 1.366 6.71259 1.66183 5.25063 2.50589C1.66403 4.57662 0.435172 9.16278 2.50589 12.7494Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                  <path
+                    d="M12.7127 15.4292C12.7127 15.4292 12.0086 10.4867 10.5011 7.87559C8.99362 5.26451 5.28935 2.57155 5.28935 2.57155M5.68449 15.6124C6.79553 12.2606 12.34 8.54524 16.3975 9.43537M12.311 2.4082C11.1953 5.72344 5.75732 9.38453 1.71875 8.58915"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 5.5715H6.33342C7.62867 5.5715 8.61917 6.56199 8.61917 7.85725C8.61917 9.15251 7.62867 10.143 6.33342 10.143H1.76192C1.30477 10.143 1 9.83823 1 9.38108V1.76192C1 1.30477 1.30477 1 1.76192 1H5.5715C6.86676 1 7.85725 1.99049 7.85725 3.28575C7.85725 4.58101 6.86676 5.5715 5.5715 5.5715H1Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                  <path
+                    d="M10.9062 7.09454H17.0016C17.0016 5.41832 15.6301 4.04688 13.9539 4.04688C12.2777 4.04688 10.9062 5.41832 10.9062 7.09454ZM10.9062 7.09454C10.9062 8.77076 12.2777 10.1422 13.9539 10.1422H15.2492"
+                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16.1125 1.44434H11.668" stroke="currentColor" stroke-width="1.2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.75 13H5.25C3 13 1.5 11.5 1.5 9.25V4.75C1.5 2.5 3 1 5.25 1H12.75C15 1 16.5 2.5 16.5 4.75V9.25C16.5 11.5 15 13 12.75 13Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M8.70676 5.14837L10.8006 6.40465C11.5543 6.90716 11.5543 7.66093 10.8006 8.16344L8.70676 9.41972C7.86923 9.92224 7.19922 9.50348 7.19922 8.5822V6.06964C7.19922 4.98086 7.86923 4.64585 8.70676 5.14837Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-overlay"></div>
+  <!-- tp-offcanvus-area-end -->
+
+  <!-- Switcher Area End -->
+
+  <header class="tp-header-height">
+    <!-- header top area start -->
+    <div id="header-sticky" class="tp-header-area tp-header-mob-space tp-transparent pl-60 pr-60 z-index-9">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-2 col-6">
+            <div class="tp-header-logo">
+              <a class="logo-1" href="index.html"><img src="assets/img/logo/logo-white.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-9 d-none d-xl-block">
+            <div class="tp-header-menu header-main-menu text-center">
+              <nav class="tp-main-menu-content">
+                <ul>
+                  <li>
+                    <a href="index.html"><b>Home </b></a>
+                  </li>
+
+                  <li>
+                    <a href="service.html">Services</a>
+                  </li>
+
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg col-6">
+            <div class="tp-header-bar text-end">
+              <button class="tp-offcanvas-open-btn">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header top area end -->
+  </header>
+
+  <!-- Modal -->
+  <div class="modal-wrapper p-relative" data-background="assets/img/home-01/team/team-details-bg.png">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- team-details area start -->
+            <div class="tm-details-wrapper p-relative">
+              <div class="tm-details-shape-1">
+                <img src="assets/img/home-01/team/team-details-shape-1.png" alt="" />
+              </div>
+              <div class="tm-details-shape-2">
+                <img src="assets/img/home-01/team/team-details-shape-2.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="row align-items-center align-items-xxl-end">
+                  <div class="col-xl-6 col-lg-6 col-md-7">
+                    <div class="tm-details-content-wrap z-index-5">
+                      <div class="tm-details-title-box mb-20">
+                        <span class="tm-hero-subtitle">Illustrator</span>
+                        <h4 class="tm-details-title">Jassica Oliver</h4>
+                      </div>
+                      <div class="tm-details-text">
+                        <p style="text-align: justify;">
+                          I'm an illustrator, working for brands. My work is
+                          fuelled by my observing nature and ongoing
+                          curiosity, utilizing simple shapes to tell all sorts
+                          of stories. My clear signature applies to both my
+                          personal work as well as my commercial commissions.
+                          Among my clients are Google, The New York Times, The
+                          New Yorker, Facebook, Vogue, TED and Twitter. Oh and
+                          I like to paint. Which still feels very new to me
+                          and slows me down.
+                        </p>
+                      </div>
+                      <div class="tm-details-portfolio mb-50">
+                        <span class="tm-details-social-title">Portfolio:</span>
+                        <a href="#">Behance</a>
+                        <a href="#">Dribbble</a>
+                        <a href="#">Meduim</a>
+                      </div>
+                      <div class="tm-details-social">
+                        <span class="tm-details-social-title">Follow:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-5">
+                    <div class="tm-details-thumb">
+                      <img src="assets/img/home-01/team/team-details-1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- team-details area end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+        <!-- hero area start -->
+        <div class="tp-hero-area tp-hero-ptb main-slider">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-xxl-12">
+                <div class="tp-hero-title-wrap mb-35 p-relative">
+                  <div class="tp-hero-shape-1">
+                    <img src="assets/img/home-01/hero/hero-bg-shape-1-1.svg" alt="" />
+                  </div>
+                  <div class="tp-hero-title-box text-center">
+                    <h1 class="tp-hero-title tp_fade_bottom">
+                      <span class="p-relative">
+                        Innovative
+                        <span class="tp-hero-subtitle d-none d-lg-block">Hello <br />
+                          People! We’re</span>
+                      </span><br />Salesforce Solutions
+                    </h1>
+                  </div>
+                </div>
+                <div class="tp-hero-content tp_fade_bottom">
+                  <p style="text-align: justify;">
+                    <span></span>
+                    Global Salesforce consultancy dedicated to partnering with businesses to unlock their full
+                    potential. We deliver tailored solutions, enhance customer engagement, and drive business growth.
+                    Headquartered in Salem, we are committed to transforming your Salesforce journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-12"></div>
+            </div>
+          </div>
+        </div>
+        <!-- hero area end -->
+        <div class="tp-hero-bottom-img-wrap">
+          <div class="tp-hero-bottom-img">
+            <video loop="" muted="" autoplay="" playsinline="">
+              <source src="https://html.hixstudio.net/videos/liko/liko.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <!-- brand area start -->
+        <div class="tp-brand-area">
+          <div class="container container-1630">
+            <div class="tp-brand-brd-top tp-brand-ptb">
+              <div class="row align-items-center">
+                <!-- <div class="col-xxl-2 col-xl-3 col-lg-3">
+                    <div class="tp-brand-title-box">
+                      <h4 class="tp-brand-title tp_fade_bottom">
+                        Clients I’ve Worked With
+                      </h4>
+                    </div>
+                  </div> -->
+                <!-- <div class="col-xxl-10 col-xl-9 col-lg-9">
+                    <div class="row align-items-center">
+                      <div class="col-xl-12">
+                        <div class="tp-brand-slider-wrapper">
+                          <div
+                            class="swiper-container tp-brand-slider-active fix"
+                          >
+                            <div class="swiper-wrapper brand-wrapper">
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-1.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-2.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-3.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-4.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-5.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-7.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-6.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-2.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- brand area end -->
+
+        <!-- service area start -->
+        <div class="tp-service-area pt-180 pb-80 tp-btn-trigger">
+          <div class="container container-1630">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6">
+                <div class="tp-service-title-box p-relative">
+                  <h4 class="tp-section-title tp-char-animation">
+                    Thoughtful<br />
+                    <span>Process</span>
+                  </h4>
+                </div>
+                <div class="tp-service-left-btn tp-btn-bounce">
+                  <a class="tp-btn-border" href="service.html">
+                    <span class="tp-btn-border-wrap">
+                      <span class="text-1">See All Services</span>
+                      <span class="text-2">See All Services</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="tp-service-right-wrap">
+                  <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
+                    <div class="tp-service-icon">
+                      <img src="assets/img/home-01/service/service-icon-1.png" alt="" />
+                    </div>
+                    <div class="tp-service-content">
+                      <h4 class="tp-service-title-sm order-0">
+                        <a href="service-details.html">Discovery & Assessment</a>
+                      </h4>
+                      <p class="order-1">
+                        We start by understanding your business goals, challenges, and current systems. <br>
+                        Our team conducts a thorough assessment to identify opportunities for improvement and
+                        integration with Salesforce.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
+                    <div class="tp-service-icon">
+                      <img src="assets/img/home-01/service/service-icon-2.png" alt="" />
+                    </div>
+                    <div class="tp-service-content">
+                      <h4 class="tp-service-title-sm">
+                        <a href="service-details.html">Strategic Planning</a>
+                      </h4>
+                      <p>
+                        We develop a customized Salesforce strategy that aligns with your business objectives. <br>
+                        Our experts design a roadmap outlining key milestones and deliverables.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
+                    <div class="tp-service-icon">
+                      <img src="assets/img/home-01/service/service-icon-3.png" alt="" />
+                    </div>
+                    <div class="tp-service-content">
+                      <h4 class="tp-service-title-sm">
+                        <a href="service-details.html">Solution Design</a>
+                      </h4>
+                      <p>
+                        We craft tailored Salesforce solutions, incorporating best practices and innovative approaches.
+                        <br>
+                        Our design process ensures scalability, flexibility, and future readiness.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
+                    <div class="tp-service-icon">
+                      <img src="assets/img/home-01/service/service-icon-4.png" alt="" />
+                    </div>
+                    <div class="tp-service-content">
+                      <h4 class="tp-service-title-sm">
+                        <a href="service-details.html">Implementation & Integration</a>
+                      </h4>
+                      <p>
+                        We execute the plan with precision, integrating Salesforce seamlessly into your existing
+                        infrastructure.<br>
+                        Our team ensures data migration is accurate, secure, and efficient.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- service area end -->
+
+        <!-- project area start -->
+
+        <!-- project area end -->
+
+        <!-- award area start -->
+        <div class="tp-award-area pt-125 pb-125">
+          <div class="container container-1630">
+            <div class="tp-award-title-box">
+              <h4 class="tp-section-title tp-char-animation">
+                What <br />
+                <span>we Do</span>
+              </h4>
+            </div>
+
+       <div class="row">
+  <div class="container container-1630">
+    <div class="tp-service-list-wrap">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a href="service.html#consulting">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-1">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce Consulting</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=core-product">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-2">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-cogs" style="color: white;"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce Core Product Implementation</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=appexchange">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-3">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce Appexchange Solutions</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=managed-service">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-4">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce Managed Service</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=integration">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-5">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-link"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce Integration</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=development">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-6">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce Development</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=ai">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-7">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Salesforce AI Implementation</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=web-app">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-8">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Web App Development</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a href="services.html?service=mobile-app">
+            <div class="tp-service-list-item tp_fade_bottom" rel="tp-service-list-thumb-9">
+              <div class="tp-service-list-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="tp-service-list-content-left">
+                <p>Mobile App Development</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="tp-award-area pt-125 pb-125">
+          <div class="container container-1630">
+            <div class="tp-award-title-box">
+              <h4 class="tp-section-title tp-char-animation">
+                Industry Expertises  
+                
+              </h4>
+            </div>
+
+            <div class="row">
+              <div class="container  container-1630">
+
+                <div class="IndustryGrid">
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-building IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Real Estate</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-graduation-cap IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Education</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-dollar-sign IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Financial Services</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-hospital IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Healthcare</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-concierge-bell IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Hospitality</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-shipping-fast IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Logistics</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-store IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Retail</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-users IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Non Profit</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-industry IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Manufacturing</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-signal IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Telecommunications</h3>
+                  </div>
+                  <div class="IndustryGridItem">
+                    <i class="fas fa-cogs IndustryIcon"></i>
+                    <h3 class="IndustryHeading">Professional Services</h3>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container  container-1630">
+          <div class="why-work-with-us">
+            <h2>Why Work With Us</h2>
+            <p>Discover the unique benefits and opportunities that Genufy offers.</p>
+            <p>At Genufy, we are committed to fostering a culture of innovation and collaboration. Our team is made up
+              of passionate professionals who strive for excellence and growth.</p>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-briefcase"></i>
+                  <p>Professional Growth</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-users"></i>
+                  <p>Collaborative Environment</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-chart-line"></i>
+                  <p>Career Advancement</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-lightbulb"></i>
+                  <p>Innovative Projects</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-handshake"></i>
+                  <p>Strong Partnerships</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-heart"></i>
+                  <p>Work-Life Balance</p>
+                </div>
+              </div>
+            </div>
+            <p>Join us in transforming the future through cutting-edge technology and exceptional service.</p>
+            <svg class="pathway" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" width="600" height="100">
+              <path d="M0,50 Q150,0 300,50 T600,50" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="10" />
+              <path d="M0,60 Q150,10 300,60 T600,60" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="10" />
+            </svg>
+          </div>
+        </div>
+
+      </main>
+
+      <footer>
+        <!-- footer area start -->
+        <div class="tp-footer-area black-bg pt-90">
+          <div class="container-fluid">
+            <div class="tp-footer-wrap">
+              <div class="  align-items-center">
+
+                <div>
+                  <div class="tp-footer-middle-wrap">
+                    <div class="tp-footer-content ">
+                      <center>
+                        <h4 class="tp-footer-big-title footer-big-text">
+                          Let's Contact!
+                        </h4>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="tp-footer-widget">
+                          <h4 class="tp-footer-title tp_fade_bottom">
+                            Say hello at:
+                          </h4>
+                          <div class="tp-footer-widget-info">
+                            <div class="tp-footer-widget-info-mail tp_fade_bottom">
+                              <a href="mailto:contact@agency.com">contact@agency.com</a>
+                            </div>
+                            <div class="tp-footer-widget-info-location tp_fade_bottom">
+                              <a href="https://www.google.com/maps/@54.581385,-101.7562167,7.5z?entry=ttu"
+                                target="_blank">389 Street St. <br />
+                                San Francisco,CA</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="tp-footer-widget">
+                          <h4 class="tp-footer-title tp_fade_bottom">
+                            Stalk us
+                          </h4>
+                          <ul class="tp-footer-widget-social">
+                            <li class="tp_fade_bottom">
+                              <a href="#">Facebook</a>
+                            </li>
+                            <li class="tp_fade_bottom">
+                              <a href="#">Instagram</a>
+                            </li>
+                            <li class="tp_fade_bottom">
+                              <a href="#">Behance</a>
+                            </li>
+                            <li class="tp_fade_bottom">
+                              <a href="#">Dribbble</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer area end -->
+
+          <!-- copyright area start -->
+          <div class="container-fluid">
+            <div class="tp-copyright-wrap">
+              <div class="row align-items-center">
+                <div class="col-xl-6 col-md-4">
+                  <div class="tp-copyright-logo text-center text-md-start">
+                    <a href="index.html"><img src="assets/img/logo/logo-white.png" alt="" /></a>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-8">
+                  <div class="tp-copyright-text text-center text-md-end">
+                    <p>Copyright © 2024 Themepure. All rights reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- copyright area end -->
+        </div>
+        <!-- footer area start -->
+      </footer>
+    </div>
+  </div>
+
+  <!-- JS here -->
+  <script src="assets/js/vendor/jquery.js"></script>
+  <script src="assets/js/bootstrap-bundle.js"></script>
+
+  <script src="assets/js/gsap.js"></script>
+  <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+  <script src="assets/js/gsap-scroll-smoother.js"></script>
+  <script src="assets/js/gsap-scroll-trigger.js"></script>
+  <script src="assets/js/gsap-split-text.js"></script>
+  <script src="assets/js/chroma.min.js"></script>
+
+  <script src="assets/js/three.js"></script>
+  <script src="assets/js/tween-max.js"></script>
+  <script src="assets/js/scroll-magic.js"></script>
+
+  <script src="assets/js/range-slider.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/purecounter.js"></script>
+  <script src="assets/js/beforeafter.js"></script>
+  <script src="assets/js/isotope-pkgd.js"></script>
+  <script src="assets/js/imagesloaded-pkgd.js"></script>
+  <script src="assets/js/ajax-form.js"></script>
+  <script src="assets/js/webgl.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tp-cursor.js"></script>
+</body>
+
+<!-- Mirrored from html.hixstudio.net/liko-prev/liko/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Sep 2024 10:05:34 GMT -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</html>

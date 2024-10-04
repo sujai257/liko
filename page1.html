@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      section {
+        margin: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html#section1" onclick="handleLinkClick(event)"
+            >Go to Page 1, Section 1</a
+          >
+        </li>
+        <li>
+          <a href="index.html#section2" onclick="handleLinkClick(event)"
+            >Go to Page 1, Section 2</a
+          >
+        </li>
+        <li><a href="#section3">Go to Section 3</a></li>
+      </ul>
+    </nav>
+    <div class="container" style="height: 1000px; background-color: red"></div>
+
+    <h1>Page 2</h1>
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>This is section 3 on page 2.</p>
+    </section>
+
+    <script>
+      function handleLinkClick(event) {
+        event.preventDefault();
+        const link = event.target.getAttribute("href");
+        window.location.href = link;
+        window.onload = () => {
+          const id = link.split("#")[1];
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView();
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

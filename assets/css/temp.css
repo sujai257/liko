@@ -1,0 +1,334 @@
+.tp-service-list-wrap {
+    padding: 60px 20px;
+}
+.tp-service-list-item {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.tp-service-list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tp-service-list-item:hover::before {
+    opacity: 1;
+}
+.tp-service-list-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.tp-service-list-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+.tp-service-list-item:hover .tp-service-list-icon {
+    transform: rotate(360deg);
+}
+.tp-service-list-content-left p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.why-work-with-us {
+    background: linear-gradient(135deg, #1d1d1d, #0d0d0d);
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.why-work-with-us::before,
+.why-work-with-us::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.why-work-with-us::before {
+    top: -150px;
+    left: -150px;
+}
+
+.why-work-with-us::after {
+    bottom: -150px;
+    right: -150px;
+}
+
+.why-work-with-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    color: #ffda44;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.why-work-with-us p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    color: #fda085;
+}
+
+.why-work-with-us .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.why-work-with-us .feature:hover {
+    transform: scale(1.05);
+    border: 2px solid #ffda44;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.why-work-with-us .feature i {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #fda085;
+    transition: color 0.3s ease;
+}
+
+.why-work-with-us .feature:hover i {
+    color: #ffda44;
+}
+
+.pathway {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .why-work-with-us h2 {
+        font-size: 28px;
+    }
+
+    .why-work-with-us p {
+        font-size: 16px;
+    }
+
+    .why-work-with-us .feature p {
+        font-size: 18px;
+    }
+}
+.IndustryContainer {
+    max-width: 1200px; /* Max width for container */
+    margin: 0 auto; /* Center container */
+}
+.IndustryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Gap between grid items */
+    text-align: left; /* Center text */
+}
+.IndustryGridItem {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+    flex-direction: row; /* Arrange items in a row */
+    padding: 15px; /* Padding inside grid items */
+    background-color: transparent; /* Background for grid items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px transparent; /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+    position: relative; /* For animation */
+    overflow: hidden; /* To prevent overflow */
+}
+.IndustryGridItem:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+.IndustryIcon {
+    font-size: 50px; /* Size of icons */
+    margin-right: 10px; /* Space between icon and text */
+    transition: transform 0.3s; /* Animation for icon */
+}
+.IndustryGridItem:hover .IndustryIcon {
+    transform: rotate(10deg); /* Slight rotation on hover */
+}
+.IndustryHeading {
+    font-size: 1.5rem; /* Default font size for headings */
+    margin: 0; /* Remove default margin */
+    transition: color 0.3s; /* Color transition */
+}
+.IndustryGridItem:hover .IndustryHeading {
+    color: #007bff; /* Change color on hover */
+}
+h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Heading color */
+}
+
+/* Industry-specific Icon Colors */
+.fa-building {
+    color: #4caf50;
+} /* Green for Real Estate */
+.fa-graduation-cap {
+    color: #ff9800;
+} /* Orange for Education */
+.fa-dollar-sign {
+    color: #2196f3;
+} /* Blue for Financial Services */
+.fa-hospital {
+    color: #f44336;
+} /* Red for Healthcare */
+.fa-concierge-bell {
+    color: #ffeb3b;
+} /* Yellow for Hospitality */
+.fa-shipping-fast {
+    color: #9c27b0;
+} /* Purple for Logistics */
+.fa-store {
+    color: #3f51b5;
+} /* Indigo for Retail */
+.fa-users {
+    color: #795548;
+} /* Brown for Non Profit */
+.fa-industry {
+    color: #607d8b;
+} /* Blue Grey for Manufacturing */
+.fa-signal {
+    color: #e91e63;
+} /* Pink for Telecommunications */
+.fa-cogs {
+    color: #ffc107;
+} /* Amber for Professional Services */
+
+/* Media Queries for Responsive Text Size and Grid Items */
+@media (min-width: 1201px) {
+    .IndustryGridItem {
+        padding: 8px; /* Even smaller padding for mobile screens */
+    }
+    .IndustryHeading {
+        font-size: 1rem; /* Even smaller font size for headings */
+    }
+    h2 {
+        font-size: 1.4rem; /* Even smaller heading size for mobile screens */
+    }
+    .IndustryIcon {
+        font-size: 40px; /* Smaller icon size for mobile screens */
+    }
+}
+
+@media (max-width: 1200px) {
+    .IndustryGridItem {
+        padding: 6px; /* Smallest padding for extra small screens */
+    }
+    .IndustryHeading {
+        font-size: 0.9rem; /* Smallest font size for headings */
+    }
+    h2 {
+        font-size: 1.2rem; /* Smallest heading size for extra small screens */
+    }
+    .IndustryIcon {
+        font-size: 35px; /* Smallest icon size for extra small screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .IndustryGridItem {
+        padding: 4px; /* Smallest padding for extra small screens */
+    }
+    .IndustryHeading {
+        font-size: 0.5rem; /* Smallest font size for headings */
+    }
+    h2 {
+        font-size: 1rem; /* Smallest heading size for extra small screens */
+    }
+    .IndustryIcon {
+        font-size: 30px; /* Smallest icon size for extra small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .IndustryGridItem {
+        padding: 8px; /* Even smaller padding for mobile screens */
+    }
+    .IndustryHeading {
+        font-size: 1rem; /* Even smaller font size for headings */
+    }
+    h2 {
+        font-size: 1.4rem; /* Even smaller heading size for mobile screens */
+    }
+    .IndustryIcon {
+        font-size: 40px; /* Smaller icon size for mobile screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .IndustryGridItem {
+        padding: 6px; /* Smallest padding for extra small screens */
+    }
+    .IndustryHeading {
+        font-size: 0.9rem; /* Smallest font size for headings */
+    }
+    h2 {
+        font-size: 1.2rem; /* Smallest heading size for extra small screens */
+    }
+    .IndustryIcon {
+        font-size: 35px; /* Smallest icon size for extra small screens */
+    }
+}
+
+/* Additional Media Queries for Fine-tuning */
+@media (max-width: 480px) {
+    .IndustryIcon {
+        font-size: 30px; /* Even smaller icon size for very small screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .IndustryIcon {
+        font-size: 25px; /* Ultra-small icon size for very small screens */
+    }
+}
